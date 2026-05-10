@@ -1,0 +1,376 @@
+[
+  {
+    "path": "TestData/valid/xyz_ascii.ply",
+    "description": "Minimal ASCII XYZ point cloud.",
+    "format": "ascii",
+    "point_count": 1000,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/valid/xyz_binary_le.ply",
+    "description": "Minimal binary little-endian XYZ point cloud.",
+    "format": "binary_little_endian",
+    "point_count": 1000,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/valid/xyz_binary_be.ply",
+    "description": "Minimal binary big-endian XYZ point cloud.",
+    "format": "binary_big_endian",
+    "point_count": 1000,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/valid/xyz_rgb_ascii.ply",
+    "description": "ASCII point cloud with RGB color.",
+    "format": "ascii",
+    "point_count": 6144,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/valid/xyz_rgba_binary_le.ply",
+    "description": "Binary point cloud with RGBA color.",
+    "format": "binary_little_endian",
+    "point_count": 2048,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      },
+      {
+        "name": "alpha",
+        "type": "uchar"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/valid/xyz_normal_binary_le.ply",
+    "description": "Binary point cloud with normals.",
+    "format": "binary_little_endian",
+    "point_count": 2048,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "nx",
+        "type": "float"
+      },
+      {
+        "name": "ny",
+        "type": "float"
+      },
+      {
+        "name": "nz",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/edge_cases/xyz_intensity_confidence.ply",
+    "description": "Additional scalar properties.",
+    "format": "binary_little_endian",
+    "point_count": 4096,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "intensity",
+        "type": "float"
+      },
+      {
+        "name": "confidence",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/edge_cases/property_order_variant.ply",
+    "description": "XYZ properties deliberately ordered as z, x, y.",
+    "format": "ascii",
+    "point_count": 4096,
+    "properties": [
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/edge_cases/comments_object_info.ply",
+    "description": "Header comments and obj_info records.",
+    "format": "ascii",
+    "point_count": 6144,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      }
+    ],
+    "comments": [
+      "Generated by PlyPointCloudTestData",
+      "Exercises non-vertex header metadata"
+    ],
+    "obj_infos": [
+      "source synthetic",
+      "coordinate_system right_handed_y_up"
+    ]
+  },
+  {
+    "path": "TestData/edge_cases/mixed_numeric_types.ply",
+    "description": "Mixed numeric property types.",
+    "format": "binary_big_endian",
+    "point_count": 4096,
+    "properties": [
+      {
+        "name": "x",
+        "type": "double"
+      },
+      {
+        "name": "y",
+        "type": "double"
+      },
+      {
+        "name": "z",
+        "type": "double"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      },
+      {
+        "name": "label",
+        "type": "ushort"
+      },
+      {
+        "name": "scan_id",
+        "type": "int"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/stress/small_grid_10k.ply",
+    "description": "Lightweight stress test with 10k grid points.",
+    "format": "binary_little_endian",
+    "point_count": 10000,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  },
+  {
+    "path": "TestData/stress/sphere_rgb_50k.ply",
+    "description": "Medium display test with 50k sphere points.",
+    "format": "binary_little_endian",
+    "point_count": 50000,
+    "properties": [
+      {
+        "name": "x",
+        "type": "float"
+      },
+      {
+        "name": "y",
+        "type": "float"
+      },
+      {
+        "name": "z",
+        "type": "float"
+      },
+      {
+        "name": "red",
+        "type": "uchar"
+      },
+      {
+        "name": "green",
+        "type": "uchar"
+      },
+      {
+        "name": "blue",
+        "type": "uchar"
+      }
+    ],
+    "comments": [],
+    "obj_infos": []
+  }
+]
