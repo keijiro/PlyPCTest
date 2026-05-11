@@ -1,0 +1,16 @@
+{
+  "name": "jp.keijiro.pcx",
+  "version": "2.0.0",
+  "displayName": "PCX",
+  "description": "Point cloud importer & renderer",
+  "unity": "6000.0",
+  "author": "Keijiro Takahashi",
+  "dependencies": { },
+  "changelogUrl": "https://github.com/keijiro/Pcx/blob/main/CHANGELOG.md",
+  "documentationUrl": "https://github.com/keijiro/Pcx",
+  "licensesUrl": "https://github.com/keijiro/Pcx/blob/main/LICENSE",
+  "license": "UNLICENSED",
+  "_upm": {
+    "changelog": ""
+  }
+}
